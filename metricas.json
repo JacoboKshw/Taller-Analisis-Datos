@@ -1,0 +1,86 @@
+{
+  "coeficientes": {
+    "intercepto": -231.94616579770997,
+    "tasa": -151.49749203056325,
+    "tasa_l1": -1.4098541218336456,
+    "tasa_l2": 10.117395656193892,
+    "paquetes": 1.9237345299115234
+  },
+  "umbral_modelo_validacion": 0.05,
+  "umbral_tasa_validacion": 3.1184583457492474,
+  "filas": {
+    "entrenamiento": 323,
+    "validacion": 99,
+    "prueba": 274
+  },
+  "prueba": {
+    "modelo (umbral fijo 1.0)": {
+      "MAE": 112.26042225361817,
+      "matriz_confusion": {
+        "TP": 96,
+        "FP": 132,
+        "FN": 2,
+        "TN": 44
+      },
+      "precision": 0.42105263157894735,
+      "sensibilidad": 0.9795918367346939,
+      "inicios_evaluables": 4,
+      "inicios_anunciados": 3,
+      "inicios_omitidos": 1,
+      "fraccion_inicios_anticipados": 0.75,
+      "aciertos_en_inicio": 3,
+      "aciertos_en_episodio_en_curso": 93
+    },
+    "modelo (umbral validación 0.05)": {
+      "MAE": 112.26042225361817,
+      "matriz_confusion": {
+        "TP": 96,
+        "FP": 132,
+        "FN": 2,
+        "TN": 44
+      },
+      "precision": 0.42105263157894735,
+      "sensibilidad": 0.9795918367346939,
+      "inicios_evaluables": 4,
+      "inicios_anunciados": 3,
+      "inicios_omitidos": 1,
+      "fraccion_inicios_anticipados": 0.75,
+      "aciertos_en_inicio": 3,
+      "aciertos_en_episodio_en_curso": 93
+    },
+    "regla de tasa (r_k >= 3.12 Mbit/s)": {
+      "MAE": null,
+      "matriz_confusion": {
+        "TP": 98,
+        "FP": 166,
+        "FN": 0,
+        "TN": 10
+      },
+      "precision": 0.3712121212121212,
+      "sensibilidad": 1.0,
+      "inicios_evaluables": 4,
+      "inicios_anunciados": 4,
+      "inicios_omitidos": 0,
+      "fraccion_inicios_anticipados": 1.0,
+      "aciertos_en_inicio": 4,
+      "aciertos_en_episodio_en_curso": 94
+    },
+    "persistencia (alertar si d_k >= 1)": {
+      "MAE": null,
+      "matriz_confusion": {
+        "TP": 94,
+        "FP": 4,
+        "FN": 4,
+        "TN": 172
+      },
+      "precision": 0.9591836734693877,
+      "sensibilidad": 0.9591836734693877,
+      "inicios_evaluables": 4,
+      "inicios_anunciados": 0,
+      "inicios_omitidos": 4,
+      "fraccion_inicios_anticipados": 0.0,
+      "aciertos_en_inicio": 0,
+      "aciertos_en_episodio_en_curso": 94
+    }
+  }
+}
